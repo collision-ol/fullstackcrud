@@ -1,0 +1,24 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{ 
+    "name": "Natanael Rantung",
+    "email": "olanrantung@gmail.com",
+    "gender": "Male"
+}
+###
+PATCH http://localhost:5000/users/9
+Content-Type: application/json
+
+{ 
+    "name": "abcd",
+    "email": "abcd@gmail.com",
+    "gender": "Male"
+}
+###
+DELETE http://localhost:5000/users/9
